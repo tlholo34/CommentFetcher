@@ -6,7 +6,7 @@ const port = 3000;
 
 app.get('/comments', async (req, res) => {
     try {
-        const response = await axios.get('https://commentapi-mothogoanecleo53.b4a.run/api/comments');
+        const response = await axios.get('http://phplaravel-1003014-3535133.cloudwaysapps.com/api/comments');
         const comments = response.data;
         res.json(comments);
     } catch (error) {
